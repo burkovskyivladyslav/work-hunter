@@ -9,8 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
-        <h1>Tasimmmmmmmmmmmmmm</h1>
-        <h3>SUltana Tasnim Jahan</h3>
+        
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -22,6 +21,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
+            <h2>Sultana Tasnim Jahan</h2>
             React
           </a>
           <span>, </span>
