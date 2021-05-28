@@ -10,6 +10,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <h1>I am sakib ahmed</h1>
+        <h2>I am sakib </h2>
         <p>
        
           Edit <code>src/App.js</code> and save to reload.
