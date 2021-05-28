@@ -1,0 +1,25 @@
+import React from 'react'
+import './Header.css'
+
+function Header() {
+    return (
+        <div className="header">
+            <h1>This is the header</h1>
+
+            <div className="header_left">
+                <img src="" alt="" />
+
+                <div className="header_search">
+                    {/* searchIcon */}
+                    <input type="text" name="" id="" />
+                </div>
+            </div>
+
+            <div className="header_right">
+
+            </div>
+        </div>
+    )
+}
+
+export default Header

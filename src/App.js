@@ -1,23 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
+import Header from './Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <h1>I am sakib ahmed</h1>
-        <h2>I am sakib </h2>
-        <p>
-       
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <div>
-          <h1>hello there this is me</h1>
-        </div>
+    <div className="app">
+      {/* Header */}
+      <Header/>
 
         <span>
           <span>Learn </span>
@@ -64,6 +53,7 @@ function App() {
         <h1>my commit</h1>
         <h4>hello tester</h4>
       </div>
+
     </div>
   );
 }
