@@ -9,7 +9,6 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
-        
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -21,7 +20,6 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2>Sultana Tasnim Jahan</h2>
             React
           </a>
           <span>, </span>
@@ -53,6 +51,10 @@ function App() {
           </a>
         </span>
       </header>
+      <div>
+        <h1>testing</h1>
+        <h1>my commit</h1>
+      </div>
     </div>
   );
 }
