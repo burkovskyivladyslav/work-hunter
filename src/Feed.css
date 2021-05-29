@@ -38,3 +38,7 @@
     display:flex;
     justify-content:space-evenly;
 }
+
+.background_cover{
+    width: 100%;
+}
