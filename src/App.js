@@ -11,9 +11,8 @@ function App() {
   const user = useSelector(selectUser);
   return (
     <div className="app">
-      {/* Header */}
       <Header />
-      {!user ? (
+      {user ? (
         <Login />
       ) : (
         <div className="app__body">
