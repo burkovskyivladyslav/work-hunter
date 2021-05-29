@@ -24,7 +24,7 @@ function Post({name, description, message, photoUrl}) {
 
             <div className="post_buttons">
                 <InputOption Icon={ThumbUpAltOutlinedIcon} title="Like" color="grey" />
-                <InputOption Icon={ChatOutlinedIcon} title="Connect" color="grey" />
+                <InputOption Icon={ChatOutlinedIcon} title="Comment" color="grey" />
                 <InputOption Icon={ShareOutlinedIcon} title="Share" color="grey" />
                 <InputOption Icon={SendOutlinedIcon} title="Send" color="grey" />
             </div>
