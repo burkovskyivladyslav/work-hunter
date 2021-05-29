@@ -10,17 +10,14 @@ function App() {
     <div className="app">
       {/* Header */}
       <Header/>
-{/* Added Sidebar */}
+      {/* Added Sidebar */}
       <div className="app__body">
 
         <Sidebar/>
-        
+        <Feed/>
+      {/* Widgets */}
       </div>
 
-      {/* App body */}
-      {/* Side bar */}
-      <Feed/>
-      {/* Widgets */}
     </div>
   );
 }
