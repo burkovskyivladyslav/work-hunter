@@ -9,6 +9,7 @@ import InputOption from './InputOption'
 import Post from './Post';
 import { db } from './firebase';
 import firebase from 'firebase';
+import coverPhoto from './images/cover.png'
 
 function Feed() {
     const [input, setInput] = useState('');
@@ -38,6 +39,9 @@ function Feed() {
 
     return (
         <div className="feed">
+            {/* <div className="background_cover"> */}
+                <img className="background_cover" src={coverPhoto} alt="" />
+            {/* </div> */}
             <div className="feed_inputContainer">
                 <div className="feed_input">
                     <CreateIcon />
