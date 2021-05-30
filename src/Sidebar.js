@@ -15,7 +15,7 @@ const Sidebar = () => {
         <img src={bannerImg} alt="" />
         <Avatar className="sidebar__avatar" />
         <h2>Sakib Ahmed</h2>
-        <h4>React Developer</h4>
+        <h4>Front-End Developer</h4>
         </div>
         <div className="sidebar__stats">
           <div className="sidebar__stat">
@@ -31,6 +31,7 @@ const Sidebar = () => {
       </div>
       <div className="sidebar__bottom">
       <p>Recent</p> 
+      <div>
       {recentItem("react js")}
       {recentItem("vue js")}
       {recentItem("angular")}
@@ -38,6 +39,7 @@ const Sidebar = () => {
       {recentItem("software engineering")}
       {recentItem("design")}
       {recentItem("developer")}
+      </div>
     </div>
     </div>
   );
