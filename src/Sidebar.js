@@ -13,7 +13,7 @@ const Sidebar = () => {
     </div>
   }
   return (
-    <div className="sidebar">
+    <div data-sidebar  className="sidebar">
       <div className="sidebar__top">
         <img src={bannerImg} alt="" />
         <Avatar src={user.photoUrl} className="sidebar__avatar" >
