@@ -38,7 +38,16 @@
     display:flex;
     justify-content:space-evenly;
 }
+.feed_inputOptions title{
+    font-size: 12px;
+
+}
 
 .background_cover{
+    margin-top: 2px;
     width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+   
 }

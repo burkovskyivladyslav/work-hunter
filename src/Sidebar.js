@@ -31,10 +31,12 @@ const Sidebar = () => {
             <p>Views on post</p>
             <p className="sidebar__statNumber">25,600</p>
           </div>
+          <h6 className="grow text-start">Grow your network</h6>
         
       </div>
       <div className="sidebar__bottom">
       <p>Recent</p> 
+      <div>
       {recentItem("react js")}
       {recentItem("vue js")}
       {recentItem("angular")}
@@ -42,6 +44,7 @@ const Sidebar = () => {
       {recentItem("software engineering")}
       {recentItem("design")}
       {recentItem("developer")}
+      </div>
     </div>
     </div>
   );

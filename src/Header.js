@@ -11,6 +11,8 @@ import { useDispatch } from 'react-redux';
 import { logout } from './features/user/userSlice';
 import { auth } from './firebase';
 import logo from './images/logo.png'
+import MenuIcon from '@material-ui/icons/Menu';
+
 
 function Header() {
     const dispatch = useDispatch()
@@ -20,30 +22,33 @@ function Header() {
 
     }
     return (
-        <div className="header">
-            <div className="header_left">
-                <img src={logo} alt="" />
-                <h1 style={{fontSize:'20px', margin:'4px .1%', width: '167px'}}>WORK HUNTER</h1>
-                
-                {/* <div className="header_search">
-                    <SearchIcon></SearchIcon>
-                    <input type="text" name="" id="" />
-                </div> */}
-            </div>
+        <div className="" style={{ "width": "100%" }}>
+            <div className="header">
+                <div className="header_left">
 
-            <div className="header_right">
-                    <HeaderOption Icon={HomeIcon} title="Home"/>
-                    <HeaderOption Icon={SupervisorAccountIcon} title="My Network"/>
-                    <HeaderOption Icon={BusinessCenterIcon} title="Jobs"/>
-                    <HeaderOption Icon={ChatIcon} title="Messaging"/>
-                    <HeaderOption Icon={NotificationsIcon} title="Notification"/>
-                    <HeaderOption avatar={true} title="Me" onClick={logoutOfApp}/>
+                    <label htmlFor="click" for="mainHeader" className="menubar">
+                        <MenuIcon className="menu-icon" />
+                    </label>
+                    <input type="checkbox" name="" id="mainHeader" className="inputBox" />
+
+
+                    <img className="header-logo" src={logo} alt="" />
+                    <h1 className="header-title">WORK HUNTER</h1>
 
                     <div className="header_search">
-                    <SearchIcon></SearchIcon>
-                    <input type="text" name="" id="" />
+                        <SearchIcon></SearchIcon>
+                        <input type="text" name="" id="" placeholder="search your dream job" />
+                    </div>
                 </div>
 
+                <div className="header_right">
+                    <HeaderOption Icon={HomeIcon} title="Home" className="header-menu-item" />
+                    <HeaderOption Icon={SupervisorAccountIcon} title="My Network" className="header-menu-item" />
+                    <HeaderOption Icon={BusinessCenterIcon} title="Jobs" className="header-menu-item" />
+                    <HeaderOption Icon={ChatIcon} title="Messaging" className="header-menu-item" />
+                    <HeaderOption Icon={NotificationsIcon} title="Notification" className="header-menu-item" />
+                    <HeaderOption avatar={true} title="Me" onClick={logoutOfApp} className="header-menu-item" />
+                </div>
             </div>
         </div>
     )

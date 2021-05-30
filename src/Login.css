@@ -1,4 +1,8 @@
 .login {
+<<<<<<< HEAD
+=======
+    height: 100vh;
+>>>>>>> da7ca07a1ea5883565bba246ab7976ab58884695
     display: grid;
     place-items: center;
     margin-left: auto;
@@ -6,17 +10,37 @@
     padding-bottom: 100px;
     padding-top:100px;
 }
+<<<<<<< HEAD
 .login > img {
     height: 70px;
     object-fit: contain;
     margin-top: 20px;
     margin-bottom: 20px;
+=======
+.login-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-heading h2{
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-right: 35px;
+    padding: 10px 10px;
+}
+.login .login-heading > img {
+    height: 50px;
+    margin-right: 25px;
+    border-radius: 5px;
+    object-fit: contain;
+>>>>>>> da7ca07a1ea5883565bba246ab7976ab58884695
 }
 .login > form {
     display: flex;
     flex-direction: column;
 }
 .login > form >  input {
+<<<<<<< HEAD
     width: 350px;
     height: 50px;
     font-size: 20px;
@@ -27,17 +51,36 @@
 .login  > form > button{
     width: 365px;
     height: 50px;
+=======
+    margin-bottom: 12px;
+}
+.login  > form > button{
+    width: 365px;
+    height: 40px;
+>>>>>>> da7ca07a1ea5883565bba246ab7976ab58884695
     font-size: large;
     background-color: #0074b1;
     color:white;
     border-radius: 5px;
+<<<<<<< HEAD
+=======
+    border: none;
+    box-shadow: 0px 0px 10px 0px black;
+>>>>>>> da7ca07a1ea5883565bba246ab7976ab58884695
 
 }
 .login__register {
     color:#0074b1;
+<<<<<<< HEAD
     cursor: pointer;
 }
 
+=======
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
+}
+>>>>>>> da7ca07a1ea5883565bba246ab7976ab58884695
 .login >  p {
     margin-top: 20px;
 
