@@ -23,9 +23,10 @@ const Login = () => {
             }))
         }).catch(error => alert(error))
     }
-    const register = () => {
+    const register = (e) => {
+        e.preventDefault()
 
-        setNewUser(false)
+       
         if(!name){
             alert("name is required")
         }
@@ -59,7 +60,7 @@ const Login = () => {
                
                 <input value={email} onChange={e =>  setEmail(e.target.value)} type="email" name="" id="" placeholder="Email" />
                 <input value={password} onChange={e => setPassword(e.target.value)} type="password" name="" id="" placeholder="Password" />
-                <button onClick={newUser? register:loginToApp} type="submit">{newUser?"Sign up":"Sign in"}</button>
+                <button style={{cursor:"pointer"}} onClick={newUser? register:loginToApp} type="submit">{newUser?"Sign up":"Sign in"}</button>
                 
             </form>
             {newUser && <p>Already member? <span className="login__register" onClick={() => setNewUser(false)}>Log in</span> </p>}
