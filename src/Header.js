@@ -26,7 +26,7 @@ function Header() {
             <div className="header">
                 <div className="header_left">
 
-                    <label htmlFor="click" for="mainHeader">
+                    <label htmlFor="click" for="mainHeader" className="menubar">
                         <MenuIcon className="menu-icon" />
                     </label>
                     <input type="checkbox" name="" id="mainHeader" className="inputBox" />
