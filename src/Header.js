@@ -13,27 +13,24 @@ function Header() {
     return (
         <div className="header">
             <div className="header_left">
-                <img src={logo} alt="" />
-                <h1 style={{fontSize:'20px', margin:'4px .1%', width: '167px'}}>WORK HUNTER</h1>
-                
-                {/* <div className="header_search">
+                <img className="header-logo" src={logo} alt="" />
+                <h1 className="header-title">WORK HUNTER</h1>
+                <div className="header_search">
                     <SearchIcon></SearchIcon>
-                    <input type="text" name="" id="" />
-                </div> */}
+                    <input type="text" name="" id="" placeholder="search your dream job" />
+                </div>
+          
             </div>
 
             <div className="header_right">
-                    <HeaderOption Icon={HomeIcon} title="Home"/>
-                    <HeaderOption Icon={SupervisorAccountIcon} title="My Network"/>
-                    <HeaderOption Icon={BusinessCenterIcon} title="Jobs"/>
-                    <HeaderOption Icon={ChatIcon} title="Messaging"/>
-                    <HeaderOption Icon={NotificationsIcon} title="Notification"/>
-                    <HeaderOption avatar="https://i.ibb.co/Gdx7FY5/Sultana-Tasnim-Jahan.jpg" title="Me"/>
+                <HeaderOption Icon={HomeIcon} title="Home" />
+                <HeaderOption Icon={SupervisorAccountIcon} title="My Network" />
+                <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
+                <HeaderOption Icon={ChatIcon} title="Messaging" />
+                <HeaderOption Icon={NotificationsIcon} title="Notification" />
+                <HeaderOption avatar="https://i.ibb.co/Gdx7FY5/Sultana-Tasnim-Jahan.jpg" title="Me" />
 
-                    <div className="header_search">
-                    <SearchIcon></SearchIcon>
-                    <input type="text" name="" id="" />
-                </div>
+                
 
             </div>
         </div>
