@@ -3,7 +3,6 @@ import './HeaderOption.css'
 import { Avatar } from "@material-ui/core"
 import { useSelector } from 'react-redux';
 import { selectUser } from './features/user/userSlice';
-import MenuIcon from '@material-ui/icons/Menu';
 
 
 function HeaderOption({ avatar, Icon, title, onClick }) {
