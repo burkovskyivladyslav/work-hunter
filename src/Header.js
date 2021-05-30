@@ -10,6 +10,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import { useDispatch } from 'react-redux';
 import { logout } from './features/user/userSlice';
 import { auth } from './firebase';
+import logo from './images/logo.png'
 
 function Header() {
     const dispatch = useDispatch()
@@ -21,12 +22,13 @@ function Header() {
     return (
         <div className="header">
             <div className="header_left">
-                <img src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg" alt="" />
-
-                <div className="header_search">
+                <img src={logo} alt="" />
+                <h1 style={{fontSize:'20px', margin:'4px .1%', width: '167px'}}>WORK HUNTER</h1>
+                
+                {/* <div className="header_search">
                     <SearchIcon></SearchIcon>
                     <input type="text" name="" id="" />
-                </div>
+                </div> */}
             </div>
 
             <div className="header_right">
@@ -35,7 +37,13 @@ function Header() {
                     <HeaderOption Icon={BusinessCenterIcon} title="Jobs"/>
                     <HeaderOption Icon={ChatIcon} title="Messaging"/>
                     <HeaderOption Icon={NotificationsIcon} title="Notification"/>
-                    <HeaderOption avatar="https://i.ibb.co/Gdx7FY5/Sultana-Tasnim-Jahan.jpg" title="Me" onClick={logoutOfApp}/>
+                    <HeaderOption avatar={true} title="Me" onClick={logoutOfApp}/>
+
+                    <div className="header_search">
+                    <SearchIcon></SearchIcon>
+                    <input type="text" name="" id="" />
+                </div>
+
             </div>
         </div>
     )

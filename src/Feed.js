@@ -12,6 +12,7 @@ import firebase from 'firebase';
 import { useSelector } from 'react-redux';
 import { selectUser } from './features/user/userSlice';
 import FlipMove from "react-flip-move"
+import coverPhoto from "./images/cover.png";
 
 function Feed() {
     const user = useSelector(selectUser)
@@ -44,6 +45,9 @@ function Feed() {
 
     return (
         <div className="feed">
+            {/* <div className="background_cover"> */}
+                <img className="background_cover" src={coverPhoto} alt="" />
+            {/* </div> */}
             <div className="feed_inputContainer">
                 <div className="feed_input">
                     <CreateIcon />
