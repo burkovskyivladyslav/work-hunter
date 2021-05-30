@@ -12,7 +12,7 @@ function App() {
       {/* Header */}
       <Header/>
       {/* Added Sidebar */}
-      <div className="app__body">
+      <div className="container app__body">
 
         <Sidebar/>
         <Feed/>
